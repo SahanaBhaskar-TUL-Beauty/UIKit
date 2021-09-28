@@ -13,6 +13,16 @@
 		9E25109226FA6E7700ED0A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E25109026FA6E7700ED0A02 /* Main.storyboard */; };
 		9E25109426FA6E8400ED0A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E25109326FA6E8400ED0A02 /* Assets.xcassets */; };
 		9E25109726FA6E8400ED0A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E25109526FA6E8400ED0A02 /* LaunchScreen.storyboard */; };
+		9E2510A026FA83A800ED0A02 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E25109F26FA83A800ED0A02 /* Theme.swift */; };
+		9E2510A226FA845800ED0A02 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510A126FA845800ED0A02 /* ThemeProtocol.swift */; };
+		9E2510A426FA851100ED0A02 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510A326FA851100ED0A02 /* LightTheme.swift */; };
+		9E2510A626FA85CE00ED0A02 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510A526FA85CE00ED0A02 /* DarkTheme.swift */; };
+		9E2510A926FA89AA00ED0A02 /* DeveloperSettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2510A726FA89AA00ED0A02 /* DeveloperSettingsViewController.storyboard */; };
+		9E2510AE26FA8B2900ED0A02 /* DeveloperSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510AD26FA8B2900ED0A02 /* DeveloperSettingsViewController.swift */; };
+		9E2510B12701952200ED0A02 /* TCQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510AF2701952200ED0A02 /* TCQButton.swift */; };
+		9E2510B22701952200ED0A02 /* TCQButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2510B02701952200ED0A02 /* TCQButton.xib */; };
+		9E2510B527019D5900ED0A02 /* TCQLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2510B327019D5900ED0A02 /* TCQLabel.swift */; };
+		9E2510B627019D5900ED0A02 /* TCQLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2510B427019D5900ED0A02 /* TCQLabel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		9E25109326FA6E8400ED0A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E25109626FA6E8400ED0A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E25109826FA6E8400ED0A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E25109F26FA83A800ED0A02 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9E2510A126FA845800ED0A02 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		9E2510A326FA851100ED0A02 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		9E2510A526FA85CE00ED0A02 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		9E2510A826FA89AA00ED0A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ThemeSupport1/Base.lproj/DeveloperSettingsViewController.storyboard; sourceTree = "<group>"; };
+		9E2510AD26FA8B2900ED0A02 /* DeveloperSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DeveloperSettingsViewController.swift; path = ../../DeveloperSettingsViewController.swift; sourceTree = "<group>"; };
+		9E2510AF2701952200ED0A02 /* TCQButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCQButton.swift; sourceTree = "<group>"; };
+		9E2510B02701952200ED0A02 /* TCQButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQButton.xib; sourceTree = "<group>"; };
+		9E2510B327019D5900ED0A02 /* TCQLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCQLabel.swift; sourceTree = "<group>"; };
+		9E2510B427019D5900ED0A02 /* TCQLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCQLabel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,41 @@
 		9E25108926FA6E7700ED0A02 /* ThemeSupport1 */ = {
 			isa = PBXGroup;
 			children = (
+				9E2510AA26FA8A4D00ED0A02 /* Settings */,
+				9E25109E26FA7C4C00ED0A02 /* themes */,
 				9E25108A26FA6E7700ED0A02 /* AppDelegate.swift */,
-				9E25108C26FA6E7700ED0A02 /* SceneDelegate.swift */,
 				9E25108E26FA6E7700ED0A02 /* ViewController.swift */,
 				9E25109026FA6E7700ED0A02 /* Main.storyboard */,
 				9E25109326FA6E8400ED0A02 /* Assets.xcassets */,
 				9E25109526FA6E8400ED0A02 /* LaunchScreen.storyboard */,
 				9E25109826FA6E8400ED0A02 /* Info.plist */,
+				9E2510AF2701952200ED0A02 /* TCQButton.swift */,
+				9E2510B02701952200ED0A02 /* TCQButton.xib */,
+				9E2510B327019D5900ED0A02 /* TCQLabel.swift */,
+				9E2510B427019D5900ED0A02 /* TCQLabel.xib */,
 			);
 			path = ThemeSupport1;
+			sourceTree = "<group>";
+		};
+		9E25109E26FA7C4C00ED0A02 /* themes */ = {
+			isa = PBXGroup;
+			children = (
+				9E25109F26FA83A800ED0A02 /* Theme.swift */,
+				9E2510A126FA845800ED0A02 /* ThemeProtocol.swift */,
+				9E2510A326FA851100ED0A02 /* LightTheme.swift */,
+				9E2510A526FA85CE00ED0A02 /* DarkTheme.swift */,
+				9E25108C26FA6E7700ED0A02 /* SceneDelegate.swift */,
+			);
+			path = themes;
+			sourceTree = "<group>";
+		};
+		9E2510AA26FA8A4D00ED0A02 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9E2510AD26FA8B2900ED0A02 /* DeveloperSettingsViewController.swift */,
+				9E2510A726FA89AA00ED0A02 /* DeveloperSettingsViewController.storyboard */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E25109726FA6E8400ED0A02 /* LaunchScreen.storyboard in Resources */,
+				9E2510B627019D5900ED0A02 /* TCQLabel.xib in Resources */,
+				9E2510B22701952200ED0A02 /* TCQButton.xib in Resources */,
 				9E25109426FA6E8400ED0A02 /* Assets.xcassets in Resources */,
+				9E2510A926FA89AA00ED0A02 /* DeveloperSettingsViewController.storyboard in Resources */,
 				9E25109226FA6E7700ED0A02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2510A226FA845800ED0A02 /* ThemeProtocol.swift in Sources */,
 				9E25108F26FA6E7700ED0A02 /* ViewController.swift in Sources */,
+				9E2510A026FA83A800ED0A02 /* Theme.swift in Sources */,
+				9E2510B12701952200ED0A02 /* TCQButton.swift in Sources */,
 				9E25108B26FA6E7700ED0A02 /* AppDelegate.swift in Sources */,
+				9E2510A426FA851100ED0A02 /* LightTheme.swift in Sources */,
+				9E2510A626FA85CE00ED0A02 /* DarkTheme.swift in Sources */,
+				9E2510AE26FA8B2900ED0A02 /* DeveloperSettingsViewController.swift in Sources */,
 				9E25108D26FA6E7700ED0A02 /* SceneDelegate.swift in Sources */,
+				9E2510B527019D5900ED0A02 /* TCQLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +216,14 @@
 				9E25109626FA6E8400ED0A02 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9E2510A726FA89AA00ED0A02 /* DeveloperSettingsViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E2510A826FA89AA00ED0A02 /* Base */,
+			);
+			name = DeveloperSettingsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
