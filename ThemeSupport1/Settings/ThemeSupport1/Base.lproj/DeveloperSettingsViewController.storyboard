@@ -43,6 +43,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Developer Settings" id="td7-7u-Fdm"/>
+                    <connections>
+                        <outlet property="switchTheme" destination="PlY-wk-lDN" id="Z4t-Ck-OXT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noo-iq-53q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

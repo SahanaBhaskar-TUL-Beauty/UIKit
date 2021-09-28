@@ -12,6 +12,8 @@ class TCQLabel: UITableViewCell {
     @IBOutlet weak var labelTheme: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        labelThemeHandler()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.changeTheme), name: NSNotification.Name(rawValue: "OnThemeChange"), object: nil)
         // Initialization code
     }
 
@@ -20,5 +22,16 @@ class TCQLabel: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    @objc func changeTheme(notif: NSNotification)
     
+    {
+        labelThemeHandler()
+     
+ 
+    }
+    func labelThemeHandler() {
+        self.backgroundColor = Theme.present.background
+        labelTheme.backgroundColor = Theme.present.labelColor
+        labelTheme.textColor = Theme.present.textColor
+    }
 }

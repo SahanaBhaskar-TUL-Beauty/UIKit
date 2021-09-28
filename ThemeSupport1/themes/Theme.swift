@@ -8,5 +8,5 @@
 import UIKit
 class Theme{
     static var present : ThemeProtocol = LightTheme()
-    
+    static var mode = "Light"
 }
